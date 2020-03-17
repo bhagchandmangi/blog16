@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-    
+    has_many :messages
     validates :title, presence: true, length: { minimum: 3 }
     #validates :text, acceptance: true
     validates :title, confirmation: true
